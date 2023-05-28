@@ -11,13 +11,14 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 30,
         padding: 20,
-        color: '#010101',
+        color: '#020202',
       }}
     >
       <Profile
@@ -36,7 +37,6 @@ export const App = () => {
 
       {/* Transaction history from transactions.json */}
       <TransactionHistory transactions={transactions} />
-
     </div>
   );
 };
