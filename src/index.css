@@ -1,7 +1,12 @@
 @import-normalize; /* bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  background-color: var(--light-grey);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,4 +17,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #858585;
+  --accent: #7c89cc;
+  --light-grey: #e7eef7;
+  --white: #ffffff;
+  --green: linear-gradient(
+    135deg,
+    rgba(59, 148, 29, 1) 0%,
+    rgba(41, 201, 73, 1) 55%,
+    rgba(11, 242, 127, 1) 100%
+  );
+  --red: linear-gradient(
+    135deg,
+    rgba(235, 55, 12, 1) 0%,
+    rgba(231, 88, 73, 0.9836309523809523) 55%,
+    rgba(237, 119, 87, 1) 100%
+  );
 }
