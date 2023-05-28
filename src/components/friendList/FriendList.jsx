@@ -1,8 +1,7 @@
-import { FriendListItem } from './FriendListItem'; // data element
-import PropTypes from 'prop-types'; // props
-import css from './FriendList.module.css'; // styles component
+import { FriendListItem } from './FriendListItem'; 
+import PropTypes from 'prop-types';
+import css from './FriendList.module.css'; 
 
-// component props 
 export const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
